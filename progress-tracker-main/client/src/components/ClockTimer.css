@@ -1,0 +1,103 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.timer-circle-wrapper {
+    position: relative;
+    width: 256px;
+    height: 256px;
+}
+
+.timer-svg {
+    transform: rotate(-90deg);
+}
+
+.timer-bg-circle {
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 8;
+}
+
+.timer-progress-circle {
+    fill: transparent;
+    stroke: #646cff;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.timer-text h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.timer-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group input {
+    width: 60px;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #2a2a2a;
+    color: white;
+}
+
+.colon {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.timer-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    background: #333;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.modal-icon {
+    color: #ffd700;
+    width: 48px;
+    height: 48px;
+}

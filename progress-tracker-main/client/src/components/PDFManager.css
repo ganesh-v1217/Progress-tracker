@@ -1,0 +1,68 @@
+.pdf-manager {
+    color: white;
+}
+
+.pdf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.upload-btn {
+    background: #646cff;
+    padding: 0.6em 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.upload-btn:hover {
+    background: #535bf2;
+}
+
+.pdf-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.pdf-item {
+    background: #2a2a2a;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+.pdf-item.completed {
+    opacity: 0.7;
+}
+
+.pdf-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.pdf-actions button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.empty-msg {
+    color: #888;
+    text-align: center;
+}

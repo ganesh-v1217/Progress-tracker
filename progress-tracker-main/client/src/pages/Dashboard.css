@@ -1,0 +1,31 @@
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.section-timer {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-progress, .section-pdf {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
